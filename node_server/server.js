@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const app = express();
 
-const path = './../SM-project/';
+const path = './SM-project/';
 app.use(express.static(path));
 
 const ip_address = '127.0.0.1';
