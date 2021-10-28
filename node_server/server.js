@@ -6,7 +6,8 @@ const path = './SM-project/';
 app.use(express.static(path));
 
 const ip_address = '127.0.0.1';
-const port = process.env.port || 30000;
+// const port = process.env.port || 30000;
+const port = 80;
 
 // console.log('Server running at http://' + ip_address + ':' + port);
 
