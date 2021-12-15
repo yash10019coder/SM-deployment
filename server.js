@@ -1,8 +1,10 @@
 const express = require('express');
 const fs = require('fs');
 const app = express();
+const cors = require('cors');
 
 const path = './SM-project/';
+app.use(cors());
 app.use(express.static(path));
 
 const ip_address = '127.0.0.1';
@@ -29,15 +31,15 @@ app.get('/account', (req, res) => {
     res.end(fs.readFileSync(path + 'account.html'));
 });
 
-app.get('/blog', (req, res) => { 
+app.get('/blog', (req, res) => {
     res.send("sorry this page is not created yet");
 })
 
-app.get('/about_us', (req, res) => { 
+app.get('/about_us', (req, res) => {
     res.send("sorry this page is not created yet");
 })
 
-app.get('/contact_us', (req, res) => { 
+app.get('/contact_us', (req, res) => {
     res.send("sorry this page is not created yet");
 })
 
